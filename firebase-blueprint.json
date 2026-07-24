@@ -1,0 +1,43 @@
+{
+  "entities": {
+    "reservations": {
+      "title": "Reservations",
+      "description": "Table reservations at Izakaya Hokuhan",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "tableId": { "type": "string" },
+        "date": { "type": "string" },
+        "time": { "type": "string" },
+        "guestName": { "type": "string" },
+        "phone": { "type": "string" },
+        "guestCount": { "type": "number" },
+        "notes": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["tableId", "date", "time", "guestName", "guestCount", "status"]
+    },
+    "reminders": {
+      "title": "Smart Reminders",
+      "description": "Safety check and operational reminders",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "time": { "type": "string" },
+        "scheduleType": { "type": "string" },
+        "recurringDays": { "type": "string" },
+        "specificDate": { "type": "string" },
+        "enabled": { "type": "boolean" },
+        "category": { "type": "string" },
+        "ttsEnabled": { "type": "boolean" },
+        "ttsScript": { "type": "string" },
+        "sensorType": { "type": "string" },
+        "soundVolume": { "type": "number" },
+        "sirenSound": { "type": "string" }
+      },
+      "required": ["title", "time", "enabled"]
+    }
+  }
+}

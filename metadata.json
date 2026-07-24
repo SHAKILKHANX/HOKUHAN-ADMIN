@@ -1,0 +1,11 @@
+{
+  "name": "Remix: Copy of Copy of Restaurant Floor Plan Reservation System",
+  "description": "Interactive restaurant reservation calendar using exact floor plan layout for daily table booking management with guest details, times, and visual availability tracking.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
